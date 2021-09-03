@@ -1,7 +1,8 @@
 module.exports = {
   images: {
     loader: "imgix",
-    path: 'http://gitrigiribrothers.github.io/natsu-sample/',
+    domains: ['gitrigiribrothers.github.io'],
+    path: 'natsu-sample',
   },
   reactStrictMode: true,
 }
