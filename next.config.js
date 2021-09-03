@@ -7,6 +7,7 @@ module.exports = {
   },
   assetPrefix: urlPrefix,
   basePath: urlPrefix,
+  trailingSlash: true,
   reactStrictMode: true,
 }
 
