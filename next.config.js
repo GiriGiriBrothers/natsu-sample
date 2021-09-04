@@ -9,5 +9,6 @@ module.exports = {
   basePath: urlPrefix,
   trailingSlash: true,
   reactStrictMode: true,
+  publicRuntimeConfig: { urlPrefix },
 }
 
