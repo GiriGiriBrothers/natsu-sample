@@ -1,9 +1,33 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
+
+const products = [ { name:"bag" }, { name:"shoes" }, { name:"socks" } ];
 
 export default function Home() {
   return (
+    <div>
+      <ul>
+        { products.map((product) => {
+          return (
+            <li key={product.name}>
+              <Link href={`/products/${product.name}`} >
+                <a>{product.name}</a>
+              </Link>
+            </li>
+          );
+        })}
+        <li>
+          <Link href="/about">
+            <a>About</a>
+          </Link>
+        </li>
+      </ul>
+      <h1>Hello Next.js</h1>
+    </div>
+
+    /*
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
@@ -60,10 +84,11 @@ export default function Home() {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <img src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
+    */
   )
 }
