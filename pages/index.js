@@ -24,7 +24,7 @@ export default function Home() {
           </Link>
         </li>
       </ul>
-      <h1>Hello Next.js</h1>
+      <h1>Hello Next.js YEAAAAH</h1>
     </div>
 
     /*
