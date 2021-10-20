@@ -8,6 +8,12 @@ const products = [ { name:"bag" }, { name:"shoes" }, { name:"socks" } ];
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>{products[0].name}</title>
+        <meta name="description" content={`${products[0].name}のページ`} />
+        <meta property="og:title" content={products[0].name} />
+        <meta property="og:description" content={`${products[0].name}のページ`} />
+      </Head>
       <ul>
         { products.map((product) => {
           return (
@@ -27,7 +33,9 @@ export default function Home() {
       <h1>Hello Next.js YEAAAAH</h1>
     </div>
 
-    /*
+    /* ******************************
+     * 前のコードを保持
+     * ******************************
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
