@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
+
+const products = [ { name:"bag" }, { name:"shoes" }, { name:"socks" } ];
 
 
 export default function Home() {
@@ -89,7 +92,8 @@ export default function Home() {
         >
           Powered by{' '}
           <span className={styles.logo}>
-
+            <img src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <img src={url('/vercel.svg')} alt="Vercel Logo" width="72" height="16" />
           </span>
         </a>
       </footer>
