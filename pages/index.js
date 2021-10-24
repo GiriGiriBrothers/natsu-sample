@@ -3,12 +3,14 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
 const products = [ { name:"bag" }, { name:"shoes" }, { name:"socks" } ];
+const title = "Top";
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>{products[0].name}</title>
+        <title>$tilte</title>
+        /** <title>{products[0].name}</title> */
         <meta name="description" content={`${products[0].name}のページ`} />
         <meta property="og:title" content={products[0].name} />
         <meta property="og:description" content={`${products[0].name}のページ`} />
